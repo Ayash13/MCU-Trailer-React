@@ -1,0 +1,93 @@
+.app {
+  background-color: #222;
+  color: #fff;
+}
+
+.app-header {
+  padding: 20px;
+  text-align: center;
+}
+
+.app-header h1 {
+  font-size: 24px;
+}
+
+.app-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.category-section {
+  margin: 20px;
+}
+
+.category-background {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.category-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.category-section:hover .category-overlay {
+  opacity: 1;
+}
+
+.category-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  z-index: 999;
+}
+
+.video-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.video-card {
+  width: 320px;
+  margin: 10px;
+  padding: 20px;
+  background-color: #333;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.video-card:hover {
+  transform: scale(1.05);
+}
+
+.video-card h3 {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #fff;
+}
+
+.video-card p {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #ccc;
+}
+
+.video-card iframe {
+  width: 100%;
+  height: 180px;
+  border-radius: 10px;
+}
